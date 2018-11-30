@@ -1,0 +1,38 @@
+Version: 1
+Styles:
+  - bootstrap/dist/css/bootstrap.min.css
+Routes:
+  Home:
+    Route: /
+    Layout: layouts/main.ejs
+    Containers:
+      left:
+        - "@compossibru/widget-twitter-widgets":
+            type: Timeline
+            options:
+              dataSource:
+                sourceType: profile
+                screenName: npmjs
+              options:
+                username: npmjs
+                height: 400
+      middle:
+        - "@compossibru/widget-twitter-widgets":
+            type: Timeline
+            options:
+              dataSource:
+                sourceType: profile
+                screenName: github
+              options:
+                username: github
+                height: 400
+      right:
+        - "@compossibru/widget-twitter-widgets":
+            type: Timeline
+            options:
+              dataSource:
+                sourceType: profile
+                screenName: internetofshit
+              options:
+                username: internetofshit
+                height: 400

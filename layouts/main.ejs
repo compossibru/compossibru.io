@@ -1,0 +1,52 @@
+<div>
+    <%- include('./partials/header.ejs') %>
+    <main role="main">
+        <section className="jumbotron text-center mb-0">
+            <div className="container">
+                <h1 className="jumbotron-heading">compossibru</h1>
+                <p className="lead text-muted">
+                    compossibru helps you to build a composite UI easily.
+                </p>
+                <p className="py-3">
+                    <kbd>
+                        npm install --save @compossibru/compossibru
+                    </kbd>
+                </p>
+                <p>
+                    <a href="https://github.com/compossibru/compossibru"
+                       className="btn btn-primary my-2"
+                       rel="noopener noreferrer" target="_blank"
+                    >GitHub</a>
+                </p>
+            </div>
+        </section>
+        <div className="py-5 bg-light">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-4">
+                        <div className="card mb-4 shadow-sm">
+                            <div className="card-body">
+                                <%- left %>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card mb-4 shadow-sm">
+                            <div className="card-body">
+                                <%- middle %>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card mb-4 shadow-sm">
+                            <div className="card-body">
+                                <%- right %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</div>

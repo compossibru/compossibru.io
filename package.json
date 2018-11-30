@@ -1,0 +1,19 @@
+{
+    "name": "@compossibru/compossibru.io",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/compossibru/compossibru.io.git"
+    },
+    "authors": [
+        {
+            "name": "Maik Schmidt",
+            "email": "maik.schmidt.hl@gmail.com"
+        }
+    ],
+    "dependencies": {
+        "@compossibru/compossibru": "github:compossibru/compossibru",
+        "@compossibru/widget-twitter-widgets": "github:compossibru/widget-twitter-widgets",
+        "@zeit/next-css": "1.0.1",
+        "bootstrap": "4.1.3"
+    }
+}
