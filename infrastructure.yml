@@ -1,5 +1,7 @@
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
+  BucketName:
+    Type: String
   HostedZoneId:
     Type: String
   AcmCertificateArn:
@@ -13,6 +15,7 @@ Resources:
     Type: AWS::S3::Bucket
     DeletionPolicy: Delete
     Properties:
+      BucketName: !Ref BucketName
       AccessControl: PublicRead
       WebsiteConfiguration:
         IndexDocument: index.html
@@ -34,6 +37,7 @@ Resources:
     Type: AWS::S3::Bucket
     DeletionPolicy: Delete
     Properties:
+      BucketName: !Sub ${BucketName}-redirect
       WebsiteConfiguration:
         RedirectAllRequestsTo:
           HostName: !Ref DNSName
