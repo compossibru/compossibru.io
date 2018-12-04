@@ -10,6 +10,10 @@
             "email": "maik.schmidt.hl@gmail.com"
         }
     ],
+    "scripts": {
+        "start": "npx compossibru start",
+        "build": "npx compossibru build"
+    },
     "dependencies": {
         "@compossibru/compossibru": "github:compossibru/compossibru",
         "@compossibru/widget-twitter-widgets": "github:compossibru/widget-twitter-widgets",

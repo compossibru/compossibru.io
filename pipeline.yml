@@ -183,7 +183,7 @@ Resources:
             build:
               commands:
                 - npm install
-                - npx compossibru build
+                - npm run build
           artifacts:
             files:
               - './infrastructure.yml'
