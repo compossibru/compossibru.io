@@ -1,4 +1,6 @@
 Version: 1
+Imports:
+  Head: next/head
 Styles:
   - bootstrap/dist/css/bootstrap.min.css
 Routes:
