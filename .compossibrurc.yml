@@ -1,6 +1,8 @@
 Version: 1
 Imports:
   Head: next/head
+  SyntaxHighlighter: react-syntax-highlighter
+  "{ darcula }": react-syntax-highlighter/dist/styles/hljs
 Styles:
   - bootstrap/dist/css/bootstrap.min.css
 Routes:
